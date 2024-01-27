@@ -1,0 +1,1735 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+  --pink:#EE0548;
+  --black:#130f40;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar{
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  transition: all 0.5s ease;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.sidebar.active{
+  width: 60px;
+}
+
+.sidebar .logo-details{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .logo-details i{
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 60px;
+  text-align: center
+}
+
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.sidebar .nav-links{
+  margin-top: 10px;
+}
+
+.sidebar .nav-links li{
+  position: relative;
+  list-style: none;
+  height: 50px;
+}
+
+.sidebar .nav-links li a{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.sidebar .nav-links li a.active{
+  background: var(--black);
+}
+
+.sidebar .nav-links li a:hover{
+  background: var(--pink);
+}
+
+.sidebar .nav-links li i{
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar .nav-links li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.sidebar .nav-links .log_out{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.home-section{
+  position: relative;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .home-section{
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+.home-section nav{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .home-section nav{
+  left: 60px;
+  width: calc(100% - 60px);
+}
+
+.home-section nav .sidebar-button{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+nav .sidebar-button i{
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.home-section nav .search-box{
+  position: relative;
+  height: 50px;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+nav .search-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+nav .search-box .bx-search{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #2697FF;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+
+.home-section nav .profile-details{
+  display: flex;
+  align-items: center;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  height: 50px;
+  padding: 0 20px 0 20px;
+}
+
+nav .profile-details img{
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+nav .profile-details .admin_name{
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+nav .profile-details i{
+  font-size: 25px;
+  color: #333;
+}
+
+.home-section .home-content{
+  position: relative;
+  padding-top: 104px;
+}
+
+.home-content .overview-boxes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-bottom: 26px;
+}
+
+.overview-boxes .box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 4 - 15px);
+  background: #fff;
+  padding: 15px 14px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.overview-boxes .box-topic{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home-content .box .number{
+  display: inline-block;
+  font-size: 35px;
+  margin-top: -6px;
+  font-weight: 500;
+}
+
+.home-content .box .indicator{
+  display: flex;
+  align-items: center;
+}
+
+.home-content .box .indicator i{
+  height: 20px;
+  width: 20px;
+  background: #8FDACB;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.box .indicator i.down{
+  background: #e87d88;
+}
+
+.home-content .box .indicator .text{
+  font-size: 12px;
+}
+
+.home-content .box .cart{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #cce5ff;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: -15px 0 0 6px;
+}
+
+.home-content .box .cart.two{
+  color: #2BD47D;
+  background: #C0F2D8;
+}
+
+.home-content .box .cart.three{
+  color: #ffc233;
+  background: #ffe8b3;
+}
+
+.home-content .box .cart.four{
+  color: #e05260;
+  background: #f7d4d7;
+}
+
+.home-content .total-order{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home-content .sales-boxes{
+  display: flex;
+  justify-content: space-between;
+/* padding: 0 20px; */
+}
+
+/* left box */
+.home-content .sales-boxes .recent-sales{
+  width: 65%;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-content .sales-boxes .sales-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sales-boxes .box .title{
+  font-size: 24px;
+  font-weight: 500;
+/* margin-bottom: 10px; */
+}
+
+.sales-boxes .sales-details li.topic{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sales-boxes .sales-details li{
+  list-style: none;
+  margin: 8px 0;
+}
+
+.sales-boxes .sales-details li a{
+  font-size: 18px;
+  color: #333;
+  font-size: 400;
+  text-decoration: none;
+}
+
+.sales-boxes .box .button{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sales-boxes .box .button a{
+  color: #fff;
+  background: #0A2558;
+  padding: 4px 12px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sales-boxes .box .button a:hover{
+  background:  #0d3073;
+}
+
+/* Right box */
+.home-content .sales-boxes .top-sales{
+  width: 35%;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0 20px 0 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sales-boxes .top-sales li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.sales-boxes .top-sales li a img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 10px;
+  background: #333;
+}
+
+.sales-boxes .top-sales li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sales-boxes .top-sales li .product,
+.price{
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1240px) {
+  .sidebar{
+    width: 60px;
+  }
+  .sidebar.active{
+    width: 220px;
+  }
+  .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section{
+/* width: calc(100% - 220px); */
+overflow: hidden;
+left: 220px;
+}
+.home-section nav{
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.sidebar.active ~ .home-section nav{
+  width: calc(100% - 220px);
+  left: 220px;
+}
+}
+
+@media (max-width: 1150px) {
+  .home-content .sales-boxes{
+    flex-direction: column;
+  }
+  .home-content .sales-boxes .box{
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+  }
+  .home-content .sales-boxes .top-sales{
+    margin: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .overview-boxes .box{
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  nav .sidebar-button .dashboard,
+  nav .profile-details .admin_name,
+  nav .profile-details i{
+    display: none;
+  }
+  .home-section nav .profile-details{
+    height: 50px;
+    min-width: 40px;
+  }
+  .home-content .sales-boxes .sales-details{
+    width: 560px;
+  }
+}
+
+@media (max-width: 550px) {
+  .overview-boxes .box{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .sidebar.active ~ .home-section nav .profile-details{
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar{
+    width: 0;
+  }
+  .sidebar.active{
+    width: 60px;
+  }
+  .home-section{
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section{
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  .home-section nav{
+    width: 100%;
+    left: 0;
+  }
+  .sidebar.active ~ .home-section nav{
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  position: relative;
+  padding-top: 104px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.main-skills .card{
+  width: 20%;
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+}
+.main-skills .card p{
+  font-size: 12px;
+}
+.main-skills .card button{
+  background: var(--black);
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: 0px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  background: var(--pink);
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+.card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-inner > p {
+  font-size: 18px;
+}
+
+.card-inner > span {
+  font-size: 35px;
+}
+
+.card:first-child {
+  border-left: 7px solid #246dec;
+}
+
+.card:nth-child(2) {
+  border-left: 7px solid #f5b74f;
+}
+
+.card:nth-child(3) {
+  border-left: 7px solid #367952;
+}
+
+.card:nth-child(4) {
+  border-left: 7px solid #cc3c43;
+}
+
+.card:nth-child(5) {
+  border-left: 7px solid #9400D3;
+}
+
+/* Courses */
+.main-course{
+  margin-top:20px ;
+  text-transform: capitalize;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.course-box{
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+
+.course-box ul li{
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.course-box ul .active{
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.course-box .course{
+  display: flex;
+}
+
+.box{
+  width: 33%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(235, 233, 233);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.box button{
+  background: var(--black);
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.box button:hover{
+  background: var(--pink);
+}
+
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+
+.html{
+  color: rgb(25, 94, 54);
+}
+
+.css{
+  color: rgb(104, 179, 35);
+}
+
+.js{
+  color: rgb(28, 98, 179);
+}
+
+.whitecard {
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.whitecard table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.whitecard table th,
+.whitecard table td {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.scrollable-table {
+  max-height: 200px; /* Set the maximum height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+@media screen and (max-width: 768px) {
+  .main-skills {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .course {
+    flex-direction: column;
+  }
+  
+  .box {
+    width: 100%;
+  }
+  
+  .whitecard table {
+    width: 100%;
+  }
+  
+  .whitecard table th,
+  .whitecard table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+/*Vendor Content*/
+.blog .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.blog .box {
+  width: calc(33.33% - 20px); /* Adjust the width as needed */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.blog .box img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.blog .box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.blog .box p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.blog .box .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--black);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.blog .box .btn:hover {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--pink);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn2 {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--black);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute;
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.modal-content img{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.modal-content .btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background: var(--black);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 0px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.modal-content .btn:hover {
+  display: inline-block;
+  padding: 5px 10px;
+  background: var(--pink);
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-content .row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.modal-content label {
+  display: block;
+}
+
+.modal-content input[type="file"] {
+  display: block;
+  margin-top: 5px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  padding: 10px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type=number] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn1 {
+  background-color: var(--black);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn1:hover {
+  background-color: var(--pink);
+  cursor: pointer;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/*Retrieve and display data*/
+.info {
+/* Add the following styles for the notes section */
+overflow: hidden;
+text-overflow: ellipsis;
+
+}
+
+.notes {
+/* Add the following styles for the notes section */
+max-height: 200px;
+overflow-y: auto;
+padding: 0px;
+word-wrap: break-word;
+word-break: break-word;
+white-space: pre-wrap;
+}
+
+.box .info h3{
+  font-weight: bold;
+}
+
+.box .info h3 span{
+  color: var(--pink);
+}
+
+.box .info p {
+  height: 1.5em; /* Adjust the height as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+p strong {
+  color: #98a2b3;
+}
+
+/* Vendor Category Section */
+.vendor-category {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.vendor-category h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.category-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-list-container {
+  display: inline-block;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.category-item {
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #F5F6FA;
+  color: #333;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.category-item:hover,
+.category-item.active {
+  background: #2697FF;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+#modalNotes {
+  max-height: 200px; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Hide vertical scrollbar */
+  word-wrap: break-word; /* Wrap long words onto a new line */
+}
+
+.vendor-title {
+  margin-bottom: 10px;
+}
+
+.vendor-price {
+  font-weight: bold;
+}
+
+.vendor-email {
+  font-weight: bold;
+
+}
+
+.vendor-contact {
+  font-weight: bold;
+  
+}
+
+.vendor-category1 {
+  font-weight: bold;
+  
+}
+
+.vendor-notes {
+  font-weight: bold;
+  
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+.vendor-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+.btn3 {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--black);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.btn3:hover {
+  background-color: var(--pink);
+  cursor: pointer;
+}
+
+
+
+/*VENDOR PERSONALIZATION*/
+.vendor-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.vendor-card-header {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.vendor-card-body {
+  padding: 10px;
+}
+
+.vendor-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.vendor-price {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.vendor-category2 {
+  font-weight: bold;
+}
+
+.vendor-email,
+.vendor-contact,
+.vendor-link,
+.vendor-notes {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#viewModal {
+  /* Other existing styles */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.blog #budget-form label {
+  margin-top: 10px;
+}
+
+.vendor-box {
+  width: 270px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  position: relative;
+  overflow: auto;
+}
+
+.vendor-box img {
+  width: 100%;
+  height: auto;
+}
+
+.vendor-box h3
+.vendor-box p {
+  margin-top: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.vendor-info {
+  text-align: left;
+  padding: 10px;
+}
+
+.vendor-info label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.vendor-info p {
+  margin-top: 0px;
+}
+
+/* Container for the budget form */
+.budget-form-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.budget-form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the budget input field and submit button */
+#budget-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog #budget-form input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.blog #budget-form button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Style the tooltip container */
+.tooltip-container {
+  position: relative;
+}
+
+/* Style the submit button */
+.submit-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style the tooltip */
+.tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip on hover */
+.submit-button:hover + .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Itinerary Content*/
+
+.itinerary-box {
+  width: 100%;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a background image to the header */
+.header-background {
+  background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)), url('https://images.unsplash.com/photo-1595576351013-42a3114b6113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover; /* Adjust to your preference */
+  background-position: center; /* Adjust to your preference */
+  color: #fff; /* Set text color to white or any contrasting color */
+  text-align: center; /* Center text vertically and horizontally */
+  padding: 20px; /* Add padding for readability */
+}
+
+/* Add more styles to your header content as needed */
+.header-background h2,
+.header-background h4 {
+  margin: 10px 0;
+}
+
+#bridegroom {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font font-weight: 400;
+  text-transform: lowercase;
+  margin-bottom: 40px;
+}
+
+
+.itinerary-box .header {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.itinerary-box .header h4{
+  font-weight: 600;
+  
+}
+
+.itinerary-box .content {
+  padding: 20px;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  background-color: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+  background-color: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.modal-itinerary h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+
+}
+
+input[type=time] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Activity container styles */
+.activity-container {
+  margin-top: 20px;
+}
+
+/* No activities found styles */
+.no-activities {
+  font-style: italic;
+  color: #999;
+  margin-top: 10px;
+}
+
+/*Feedback*/
+.feedback-box {
+  margin: 0 50px; /* Add spacing on the left and right sides */
+  margin-top: 10px;
+}
+
+.feedback-box table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff; /* Set the background color to white */
+}
+
+.feedback-box th {
+  background-color: #f1f1f1; /* Set the table header background color */
+  padding: 10px;
+}
+
+.feedback-box td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Add border-bottom to separate table rows */
+}
+
+.border {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.modal-content #feedbackForm {
+  padding-top: 10px;
+}
+
+/* User Profile */
+.profile-box {
+  width: 100%;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.profile-box h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+
+}
+
+.profile-box form {
+  padding-top: 10px;
+
+}
+
+/* Checklist filter */
+.checklist-section{
+  display: block;
+  position: relative;
+  padding-top: 104px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.filter-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  background-color: white;
+}
+
+.filter-menu a.active {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.filter-menu a:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+/* checklist content */
+.checklist-box {
+  /* width: 100%;*/
+  padding: 50px 30px 30px 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.checklist-content {
+  margin-top: 20px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.checklist-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checklist-item label {
+  display: flex;
+  flex-direction: column;
+}
+
+.checklist-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checklist-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.checklist-item .status {
+  font-size: 12px;
+  color: #555;
+}
+
+.checklist-item input[type="checkbox"] {
+  transform: scale(2.0); /* You can adjust the scale value as needed */
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+/*Guestlist section*/
+.guestlist-section{
+  display: block;
+  position: relative;
+  padding-top: 104px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* style.css */
+
+.guest-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.guest-table th,
+.guest-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.guest-table th {
+  background-color: #f2f2f2;
+}
+
+.guest-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.guest-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Style the checkboxes */
+.guest-table input[type="checkbox"] {
+  transform: scale(1.5); /* Make checkboxes larger */
+}
+
+.button-row {
+  display: flex; /* Display children in a row */
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align children to the start of the container */
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+#selected-count {
+  font-weight: bold; /* Make the count text bold */
+  margin-right: 10px; /* Add spacing between count and buttons */
+}
+
+.button-container {
+  display: flex; /* Display counter and buttons in a row */
+  align-items: center; /* Center vertically within the button container */
+  margin-bottom: 20px;
+}
+
+.btn4 {
+  margin-left: 10px; /* Add spacing between buttons */
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007BFF; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none; /* Remove button borders */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn4:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+.button-row .btn4 i {
+  font-size: 16px; /* You can adjust the size as needed */
+}
+
+/* Style for modal-scrollable div */
+.modal-scrollable {
+    max-height: 400px; /* Set the maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 20px; /* Add space for scrollbar */
+}
+
+/* Style for scrollbar track */
+.modal-scrollable::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Style for scrollbar thumb */
+.modal-scrollable::-webkit-scrollbar-thumb {
+    background-color: #888; /* Background color of the thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+/* Style for scrollbar thumb on hover */
+.modal-scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

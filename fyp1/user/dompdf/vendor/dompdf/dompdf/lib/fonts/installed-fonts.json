@@ -1,0 +1,11 @@
+{
+    "lora": {
+        "normal": "lora_normal_1e456935fe9c51766440f21d82030ece"
+    },
+    "playfair display": {
+        "normal": "playfair_display_normal_3e3339992efb50efd3a354184ece776c"
+    },
+    "tangerine": {
+        "normal": "tangerine_normal_86ca96bebadc97e3192c8799a0930df4"
+    }
+}
